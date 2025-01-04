@@ -1,0 +1,144 @@
+/* Shared styles for new features */
+.feature-section {
+    background: rgba(10, 15, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    margin: 20px 4%;
+}
+
+/* Mood Selector Styles */
+.mood-selector {
+    background: rgba(10, 15, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    margin: 20px 4%;
+}
+
+.mood-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mood-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mood-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Movie Timeline Styles */
+.movie-timeline {
+    background: rgba(10, 15, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    margin: 20px 4%;
+    overflow-x: auto;
+}
+
+.timeline-track {
+    position: relative;
+    height: 150px;
+    margin: 40px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-point {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.timeline-point img {
+    width: 60px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.timeline-point:hover img {
+    transform: scale(1.1);
+}
+
+.timeline-point span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Cast Web Styles */
+.cast-web {
+    background: rgba(10, 15, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    margin: 20px 4%;
+    min-height: 400px;
+}
+
+.web-visualization {
+    margin-top: 20px;
+    height: 350px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+}
+
+/* Section Headers */
+.mood-selector h3,
+.movie-timeline h3,
+.cast-web h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-section,
+    .mood-selector,
+    .movie-timeline,
+    .cast-web {
+        margin: 15px 3%;
+        padding: 20px;
+    }
+
+    .mood-buttons {
+        gap: 10px;
+    }
+
+    .mood-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .timeline-track {
+        height: 120px;
+    }
+
+    .timeline-point img {
+        width: 45px;
+        height: 68px;
+    }
+} 
